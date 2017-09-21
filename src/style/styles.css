@@ -1,0 +1,50 @@
+
+/***** NavBar *****/
+
+#navContainer {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+
+.navbar {
+  margin:0;
+  border-radius: 0;
+}
+
+nav .navNarrow i {
+  width: 100%;
+  margin: auto;
+  padding:10px;
+	text-align: center;
+	cursor: pointer;
+	color: #999;
+}
+
+.navWide {
+  display: none;
+}
+
+.navNarrow .narrowLinks {
+  display:none;
+}
+
+.navNarrow .narrowLinks li {
+  text-align: center;
+	text-decoration: none;
+	display: block;
+	padding: 0.5em 0;
+}
+
+li span {
+  font-size: 1.6rem;
+}
+
+@media (min-width:768px) {
+  nav .navWide {
+    display: block;
+  }
+  nav .navNarrow {
+    display: none;
+  }
+}
